@@ -42,16 +42,16 @@ class SplashScreen extends StatelessWidget {
                 color: const Color(0xFF672CBC),
               ),
               width: MediaQuery.of(context).size.width * 0.75,
-              height: MediaQuery.of(context).size.height * 0.55,
+              height: 425,
               child: Stack(
                 alignment: Alignment.topCenter,
                 clipBehavior: Clip.none,
                 children: [
                   Image.asset(
                     'assets/images/quran_splash.png',
-                    alignment: Alignment.center,
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width * 1,
+                    alignment: Alignment.topCenter,
+                    fit: BoxFit.fill,
+                    width: MediaQuery.of(context).size.width * 0.75,
                   ),
                   Positioned(
                     bottom: -20,
@@ -71,7 +71,7 @@ class SplashScreen extends StatelessWidget {
                         'Get Started',
                         style: GoogleFonts.poppins(
                           fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w700,
                           color: const Color(0xFF091945),
                         ),
                       ),
